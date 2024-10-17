@@ -11,7 +11,7 @@ RUN yarn build
 RUN yarn install --production --ignore-scripts --prefer-offline --force --frozen-lockfile
 
 
-FROM node:20-alpine
+FROM node:23.0.0-alpine
 
 ENV NODE_ENV production
 ENV NODE_CONFIG_DIR ./dist/config
