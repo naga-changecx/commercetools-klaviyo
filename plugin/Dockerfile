@@ -1,4 +1,4 @@
-FROM node:20-alpine AS BUILD_IMAGE
+FROM node:23.0.0-alpine AS BUILD_IMAGE
 RUN apk add --update dumb-init
 
 WORKDIR /usr/src/app
